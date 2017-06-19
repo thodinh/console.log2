@@ -1,0 +1,19 @@
+{
+  "name": "console.log2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thodinh/console.log2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thodinh/console.log2/issues"
+  },
+  "homepage": "https://github.com/thodinh/console.log2#readme"
+}
