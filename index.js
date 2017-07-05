@@ -53,4 +53,4 @@ var Log2 = function(context) {
     return this;
 }
 
-module.exports = Log2;
+new Log2();
