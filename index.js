@@ -48,13 +48,15 @@ var Log2 = function(context) {
         log.apply(console, [`${getLogDate()},`, 'DEBUG,', trace, ...arguments]);
     }
 
-    // var error = console.error;
+    var error = console.error;
     console.error = function () {
-        console.trace.apply(console, [`${getLogDate()},`, 'ERROR,', ...arguments]);
+        var trace = getStackTrace() + ",";
+        error.apply(console, [`${getLogDate()},`, 'ERROR,', trace, ...arguments]);
     }
 
     console.fatal = function () {
-        console.trace.apply(console, [`${getLogDate()},`, 'FATAL,', ...arguments]);
+        var trace = getStackTrace() + ",";
+        error.apply(console, [`${getLogDate()},`, 'FATAL,', trace, ...arguments]);
     }
 
     var info = console.info;
